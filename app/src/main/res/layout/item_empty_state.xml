@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:paddingHorizontal="36dp"
+	android:paddingBottom="?actionBarSize">
+
+	<!-- Icon wrapped in soft circular background, mirroring the JSX redesign -->
+	<FrameLayout
+		android:layout_width="176dp"
+		android:layout_height="176dp">
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/bg_empty_state_circle" />
+
+		<org.koitharu.kotatsu.core.image.CoilImageView
+			android:id="@+id/icon"
+			android:layout_width="148dp"
+			android:layout_height="148dp"
+			android:layout_gravity="center"
+			android:contentDescription="@null"
+			android:scaleType="fitCenter"
+			app:crossfadeEnabled="false"
+			tools:src="@drawable/ic_empty_history" />
+
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/textPrimary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:gravity="center"
+		android:letterSpacing="-0.01"
+		android:textAppearance="?attr/textAppearanceTitleLarge"
+		android:textColor="?colorOnSurface"
+		tools:text="Belum ada yang dibaca" />
+
+	<TextView
+		android:id="@+id/textSecondary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		android:lineSpacingMultiplier="1.4"
+		android:textAppearance="?attr/textAppearanceBodyMedium"
+		android:textColor="?colorOnSurfaceVariant"
+		tools:text="Manga yang kamu baca akan muncul di sini" />
+
+	<Button
+		android:id="@+id/button_retry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:visibility="gone"
+		tools:text="@string/start_explore"
+		tools:visibility="visible" />
+
+</LinearLayout>

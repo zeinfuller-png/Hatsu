@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Side drawer layout — matches JSX redesign:
+    - Header: blue icon box + "Kotatsu" title + "Manga Reader" subtitle
+    - Nav items: rounded-right active indicator + left border accent
+    - Footer: Settings item
+-->
+<com.google.android.material.navigation.NavigationView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/navigationView"
+	android:layout_width="280dp"
+	android:layout_height="match_parent"
+	android:layout_gravity="start"
+	android:fitsSystemWindows="true"
+	app:itemShapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Kotatsu.NavDrawer.Item"
+	app:itemShapeFillColor="?colorSecondaryContainer"
+	app:itemIconTint="@color/nav_drawer_item_color"
+	app:itemTextColor="@color/nav_drawer_item_color"
+	app:itemTextAppearance="@style/TextAppearance.Kotatsu.NavDrawer.Item"
+	app:itemBackground="@null"
+	app:menu="@menu/nav_drawer_main"
+	app:headerLayout="@layout/drawer_header_main" />

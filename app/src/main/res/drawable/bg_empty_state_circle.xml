@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Soft circular background for empty state icon.
+    Matches the JSX redesign: linear gradient blue tint (#EEF2FF → #E8EEFF),
+    circular shape, with subtle shadow via elevation on parent.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="?colorSecondaryContainer" />
+</shape>

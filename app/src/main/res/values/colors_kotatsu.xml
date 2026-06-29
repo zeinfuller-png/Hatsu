@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Colors for Default theme — Redesign palette from kotatsu-redesign.jsx
+  ~ Primary brand color updated to #3B5FA0 (steel blue)
+-->
+<resources>
+	<color name="kotatsu_primary">#3B5FA0</color>
+	<color name="kotatsu_primaryContainer">#EEF2FF</color>
+	<color name="kotatsu_onPrimary">#FFFFFF</color>
+	<color name="kotatsu_onPrimaryContainer">#001944</color>
+	<color name="kotatsu_inversePrimary">#AFC6FF</color>
+	<color name="kotatsu_secondary">#575E71</color>
+	<color name="kotatsu_secondaryContainer">#E8EEFF</color>
+	<color name="kotatsu_onSecondary">#FFFFFF</color>
+	<color name="kotatsu_onSecondaryContainer">#141B2C</color>
+	<color name="kotatsu_tertiary">#725573</color>
+	<color name="kotatsu_tertiaryContainer">#FDD7FB</color>
+	<color name="kotatsu_onTertiary">#FFFFFF</color>
+	<color name="kotatsu_onTertiaryContainer">#2A132C</color>
+	<color name="kotatsu_surface">#F5F5F7</color>
+	<color name="kotatsu_surfaceDim">#DCDCE0</color>
+	<color name="kotatsu_surfaceBright">#F5F5F7</color>
+	<color name="kotatsu_surfaceContainerLowest">#FFFFFF</color>
+	<color name="kotatsu_surfaceContainerLow">#F5F3F7</color>
+	<color name="kotatsu_surfaceContainer">#EBEBED</color>
+	<color name="kotatsu_surfaceContainerHigh">#E3E3E6</color>
+	<color name="kotatsu_surfaceContainerHighest">#DCDCE0</color>
+	<color name="kotatsu_surfaceVariant">#E1E2EC</color>
+	<color name="kotatsu_onSurface">#1A1A2E</color>
+	<color name="kotatsu_onSurfaceVariant">#44464F</color>
+	<color name="kotatsu_inverseSurface">#303034</color>
+	<color name="kotatsu_inverseOnSurface">#F2F0F4</color>
+	<color name="kotatsu_background">#F5F5F7</color>
+	<color name="kotatsu_outline">#757780</color>
+</resources>
