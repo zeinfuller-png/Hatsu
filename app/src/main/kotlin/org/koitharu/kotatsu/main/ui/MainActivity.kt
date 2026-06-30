@@ -127,8 +127,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), AppBarOwner, BottomNav
 		}
 
 		// NavigationView: nav items + settings footer
-		val navigationView = findViewById<com.google.android.material.navigation.NavigationView>(R.id.navigationView)
-		navigationView?.setNavigationItemSelectedListener { item ->
+		val navigationView = viewBinding.drawerInclude.root
+		navigationView.setNavigationItemSelectedListener { item ->
 			(viewBinding.root as? androidx.drawerlayout.widget.DrawerLayout)?.closeDrawer(GravityCompat.START)
 			when (item.itemId) {
 				R.id.nav_settings -> {
@@ -203,8 +203,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), AppBarOwner, BottomNav
 		// Sync side drawer checked state with current tab
 		val currentNavId = viewBinding.bottomNav?.selectedItemId
 		if (currentNavId != null) {
-			findViewById<com.google.android.material.navigation.NavigationView>(R.id.navigationView)
-				?.setCheckedItem(currentNavId)
+			viewBinding.drawerInclude.root.setCheckedItem(currentNavId)
 		}
 	}
 
