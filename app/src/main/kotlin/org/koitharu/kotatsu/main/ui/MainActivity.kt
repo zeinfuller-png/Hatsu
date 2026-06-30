@@ -205,8 +205,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), AppBarOwner, BottomNav
 			viewBinding.appbar.setExpanded(true)
 		}
 		// Sync side drawer checked state with current tab
-		val currentNavId = viewBinding.bottomNav?.selectedItemId
-		if (currentNavId != null) {
+		val currentNavId = navigationDelegate.getItemId(fragment)
+		if (currentNavId != 0) {
 			viewBinding.drawerInclude?.root?.setCheckedItem(currentNavId)
 		}
 	}
