@@ -64,9 +64,13 @@
 
 	<!-- Redesign: BottomNav with EBEBED container color and rounded active indicator -->
 	<style name="Widget.Kotatsu.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
-		<item name="itemActiveIndicatorShapeAppearance">@style/ShapeAppearanceOverlay.Kotatsu.Circle</item>
+		<item name="itemActiveIndicatorStyle">@style/Widget.Kotatsu.BottomNavigationView.ActiveIndicator</item>
 		<item name="itemPaddingTop">8dp</item>
 		<item name="itemPaddingBottom">8dp</item>
+	</style>
+
+	<style name="Widget.Kotatsu.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+		<item name="shapeAppearance">@style/ShapeAppearanceOverlay.Kotatsu.Circle</item>
 	</style>
 
 	<style name="Widget.Kotatsu.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
