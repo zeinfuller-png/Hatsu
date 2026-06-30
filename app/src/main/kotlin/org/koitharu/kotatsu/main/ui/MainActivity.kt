@@ -123,13 +123,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), AppBarOwner, BottomNav
 
 		// Hamburger button opens side drawer
 		viewBinding.searchBar.setNavigationOnClickListener {
-			viewBinding.drawerLayout?.openDrawer(GravityCompat.START)
+			(viewBinding.root as? androidx.drawerlayout.widget.DrawerLayout)?.openDrawer(GravityCompat.START)
 		}
 
 		// NavigationView: nav items + settings footer
 		val navigationView = findViewById<com.google.android.material.navigation.NavigationView>(R.id.navigationView)
 		navigationView?.setNavigationItemSelectedListener { item ->
-			viewBinding.drawerLayout?.closeDrawer(GravityCompat.START)
+			(viewBinding.root as? androidx.drawerlayout.widget.DrawerLayout)?.closeDrawer(GravityCompat.START)
 			when (item.itemId) {
 				R.id.nav_settings -> {
 					router.openSettings()
