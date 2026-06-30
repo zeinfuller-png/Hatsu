@@ -206,7 +206,8 @@ class MainNavigationDelegate(
 		return true
 	}
 
-	private fun getItemId(fragment: Fragment) = when (fragment) {
+	@IdRes
+	fun getItemId(fragment: Fragment) = when (fragment) {
 		is HistoryListFragment -> R.id.nav_history
 		is FavouritesContainerFragment -> R.id.nav_favorites
 		is ExploreFragment -> R.id.nav_explore
