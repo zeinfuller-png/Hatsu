@@ -136,7 +136,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), AppBarOwner, BottomNav
 					true
 				}
 				else -> {
-					navigationDelegate.selectItem(item.itemId)
+					val handled = navigationDelegate.selectItem(item.itemId)
+					if (handled) {
+						item.isChecked = true
+					}
+					handled
 				}
 			}
 		}
